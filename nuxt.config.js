@@ -42,15 +42,20 @@ export default {
   build: {
   },
 
+  // to Docker
   server: {
     host: '0',
     port: 3000
   },
 
+  // to Hot reload on Docker Desktop
   watchers: {
     webpack: {
       poll: true
     }
-  }
+  },
 
+  generate: {
+    dir: '../npkk-output'
+  }
 }
